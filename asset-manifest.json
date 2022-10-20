@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github-linktree/static/css/main.570ec5c0.css",
+    "main.js": "/github-linktree/static/js/main.b539457f.js",
+    "static/js/787.fdc10af3.chunk.js": "/github-linktree/static/js/787.fdc10af3.chunk.js",
+    "index.html": "/github-linktree/index.html",
+    "main.570ec5c0.css.map": "/github-linktree/static/css/main.570ec5c0.css.map",
+    "main.b539457f.js.map": "/github-linktree/static/js/main.b539457f.js.map",
+    "787.fdc10af3.chunk.js.map": "/github-linktree/static/js/787.fdc10af3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.570ec5c0.css",
+    "static/js/main.b539457f.js"
+  ]
+}
