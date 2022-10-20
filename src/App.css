@@ -1,0 +1,167 @@
+:root {
+  --bgColor: black;
+  --bgColor2: #0c0c0c;
+  --accentColor: white;
+  --font: 'Montserrat', sans-serif;
+  --delay: .3s;
+}
+
+.app {
+  /* width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.canvas {
+  /* background-color: red; */
+  height: 100vh;
+}
+
+.realName {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  color: var(--accentColor);
+}
+
+.userName {
+  color: var(--accentColor);
+  background-color: var(--bgColor2);
+  padding: 10px;
+}
+
+.description {
+  color: var(--accentColor);
+}
+
+#links {
+  max-width: 675px;
+  width: auto;
+  display: block;
+  margin: 27px auto;
+}
+
+#links a {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.link {
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link:hover {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  cursor: pointer;
+}
+
+/* ACTIVE LINKS */
+
+#gitHub:active {
+  background-color: #6e5494;
+  border-color: #6e5494;
+  color: white;
+}
+
+#blog:active {
+  background-color: #b12727;
+  border-color: #b12727;
+  color: white;
+}
+
+#linkedIn:active {
+  background-color: #0077B5;
+  border-color: #0077B5;
+  color: white;
+}
+
+#twitter:active {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+  color: white;
+}
+
+#mail:active {
+  background-color: #00a0b5;
+  border-color: #00a0b5;
+  color: white;
+}
+
+.darkToggleContainer {
+  max-width: calc(100vw / 4);
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.darkToggle {
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.darkToggle:hover {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  cursor: pointer;
+}
+
+/* TEXT TEMPLATE */
+
+.nameText {
+  transition: opacity 250ms;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 3em;
+  z-index: 1;
+  pointer-events: none;
+  /* no select */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
