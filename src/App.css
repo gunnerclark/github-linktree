@@ -58,7 +58,7 @@
   position: relative;
   background-color: transparent;
   color: var(--accentColor);
-  border: solid var(--accentColor) 2px;
+  border: solid var(--accentColor) 1px;
   border-radius: 10px;
   font-size: 1rem;
   text-align: left;
