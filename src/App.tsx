@@ -43,15 +43,15 @@ function App() {
           &nbsp;
           GitHub
         </a>
-        <a className="link" id="linkedIn" href="https://www.linkedin.com/in/gunnerclark" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          &nbsp;
-          LinkedIn
-        </a>
         <a className="link" id="twitter" href="https://twitter.com/theineptdev" target="_blank">
           <FontAwesomeIcon icon={faTwitter} size="lg" />
           &nbsp;
           Twitter
+        </a>
+        <a className="link" id="linkedIn" href="https://www.linkedin.com/in/gunnerclark" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          &nbsp;
+          LinkedIn
         </a>
         <a className="link" id="mail" href="mailto:contact@gunnerclark.dev?subject=Website: [Your Subject]" target="_blank">
           <FontAwesomeIcon icon={faEnvelope} size="lg" />

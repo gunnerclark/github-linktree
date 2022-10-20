@@ -95,23 +95,28 @@
   color: white;
 }
 
-#linkedIn:active {
-  background-color: #0077B5;
-  border-color: #0077B5;
-  color: white;
-}
-
 #twitter:active {
   background-color: #1DA1F2;
   border-color: #1DA1F2;
   color: white;
 }
 
+#linkedIn:active {
+  background-color: #0077B5;
+  border-color: #0077B5;
+  color: white;
+}
+
 #mail:active {
+  background-color: #2f5da3;
+  border-color: #2f5da3;
+  color: white;
+}
+/* #mail:active {
   background-color: #00a0b5;
   border-color: #00a0b5;
   color: white;
-}
+} */
 
 .darkToggleContainer {
   max-width: calc(100vw / 4);
