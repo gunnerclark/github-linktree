@@ -72,10 +72,13 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.link:hover {
-  background-color: var(--accentColor);
-  color: var(--bgColor);
-  cursor: pointer;
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    cursor: pointer;
+  }
+
 }
 
 /* ACTIVE LINKS */
@@ -135,10 +138,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.darkToggle:hover {
-  background-color: var(--accentColor);
-  color: var(--bgColor);
-  cursor: pointer;
+@media (hover: hover) {
+  .darkToggle:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    cursor: pointer;
+  }
 }
 
 /* TEXT TEMPLATE */
