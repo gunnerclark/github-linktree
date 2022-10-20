@@ -23,7 +23,7 @@ function Cube({ darkMode, setDarkMode }: any) {
       onPointerOut={(event) => setHover(false)}
     >
       <boxBufferGeometry attach="geometry" args={[3, 3, 3]} />
-      <meshLambertMaterial attach="material" color={darkMode ? "white" : "black"}/>
+      <meshLambertMaterial attach="material" wireframe color={darkMode ? "white" : "black"}/>
     </mesh>
   )
 }
