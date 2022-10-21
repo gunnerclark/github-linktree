@@ -119,17 +119,18 @@
 } */
 
 .darkToggleContainer {
-  max-width: calc(100vw / 4);
+  max-width: 675px;
   width: auto;
   display: block;
   margin: auto;
 }
 
 .darkToggle {
+  width: 225px;
   position: relative;
   background-color: transparent;
   color: var(--accentColor);
-  border: solid var(--accentColor) 2px;
+  border: solid var(--accentColor) 1px;
   border-radius: 10px;
   font-size: 1rem;
   text-align: left;
@@ -149,6 +150,36 @@
     color: var(--bgColor);
     cursor: pointer;
   }
+}
+
+.themeToggleContainer {
+  position: fixed;
+  bottom: 1em;
+  right: 1em; 
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeToggle {
+  background-color: transparent;
+  font-size: 1.25em;
+  color: var(--accentColor);
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .themeToggleContainer {
+    cursor: pointer;
+  }
+  /* .themeToggle:hover {
+    border: 1px solid var(--accentColor);
+    color: var(--bgColor);
+  } */
 }
 
 /* TEXT TEMPLATE */

@@ -64,6 +64,11 @@ function App() {
           <FontAwesomeIcon icon={darkMode ? faSun : faMoon} size="lg" />
         </div>
       </div> */}
+      <div className="themeToggleContainer" onClick={(event) => {setDarkMode(!darkMode)}}>
+        <div className="themeToggle">
+          <FontAwesomeIcon icon={darkMode ? faSun : faMoon} size="lg" />
+        </div>
+      </div>
     </div>
   );
 }
