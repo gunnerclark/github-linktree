@@ -1,6 +1,6 @@
 import './App.css';
 import Cube from './components/Cube';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Canvas } from '@react-three/fiber';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +8,23 @@ import { faFeather, faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-sv
 import { faGithub, faLinkedin ,faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined' ) {
+      const val = localStorage.getItem('darkMode');
+      return val ? JSON.parse(val) : false;
+    }
+    return true;
+  })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' ) {
+     localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    }
+  }, [darkMode])
+
+  const toggleMode = () => {
+    setDarkMode(darkMode === false ? true : false);
+  }
   
   if (!darkMode) {
     document.documentElement.style.setProperty('--bgColor', "white")
@@ -19,8 +35,6 @@ function App() {
     document.documentElement.style.setProperty('--bgColor2', "#0c0c0c")
     document.documentElement.style.setProperty('--accentColor', "white")
   }
-
-  let darkLightIcon = darkMode ? "faSun" : "faMoon";
 
   return (
     <div className="app">
@@ -64,7 +78,7 @@ function App() {
           <FontAwesomeIcon icon={darkMode ? faSun : faMoon} size="lg" />
         </div>
       </div> */}
-      <div className="themeToggleContainer" onClick={(event) => {setDarkMode(!darkMode)}}>
+      <div className="themeToggleContainer" onClick={(event) => {toggleMode()}}>
         <div className="themeToggle">
           <FontAwesomeIcon icon={darkMode ? faSun : faMoon} size="lg" />
         </div>
