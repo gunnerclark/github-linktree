@@ -26,7 +26,7 @@ function App() {
     setDarkMode(darkMode === false ? true : false);
   }
   
-  if (!darkMode) {
+  if (darkMode) {
     document.documentElement.style.setProperty('--bgColor', "white")
     document.documentElement.style.setProperty('--bgColor2', "#f0f0f0")
     document.documentElement.style.setProperty('--accentColor', "black")
