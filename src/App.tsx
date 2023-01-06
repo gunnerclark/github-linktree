@@ -43,25 +43,25 @@ function App() {
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Cube darkMode={darkMode} setDarkMode={setDarkMode}/>
       </Canvas>
-      <div className="realName">gunner clark</div>
-      <div className="userName">@theineptdev</div>
+      <div className="realName">@gunnerclark</div>
+      {/* <div className="userName">@gunnerclark</div> */}
       {/* <div className="description">My name is Guner Clark. I'm a software developer</div> */}
       <div id="links">
-        <a className="link" id="blog" href="https://theinept.blog/" target="_blank">
+        <a className="link" id="blog" href="https://gunnerclark.blog/" target="_blank">
           <FontAwesomeIcon icon={faFeather} size="lg" />
           &nbsp;
           Blog
         </a>
-        <a className="link" id="gitHub" href="https://github.com/theineptdev" target="_blank">
+        <a className="link" id="gitHub" href="https://github.com/gunnerclark" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="lg" />
           &nbsp;
           GitHub
         </a>
-        <a className="link" id="twitter" href="https://twitter.com/theineptdev" target="_blank">
+        {/* <a className="link" id="twitter" href="https://twitter.com/theineptdev" target="_blank">
           <FontAwesomeIcon icon={faTwitter} size="lg" />
           &nbsp;
           Twitter
-        </a>
+        </a> */}
         <a className="link" id="linkedIn" href="https://www.linkedin.com/in/gunnerclark" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} size="lg" />
           &nbsp;
