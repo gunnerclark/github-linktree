@@ -46,12 +46,12 @@ function App() {
       <div className="realName">@gunnerclark</div>
       {/* <div className="userName">@gunnerclark</div> */}
       {/* <div className="description">My name is Guner Clark. I'm a software developer</div> */}
-      <div id="links">
+      {/* <div id="links">
         <a className="link" id="blog" href="https://blog.gunnerclark.dev/" target="_blank">
           <FontAwesomeIcon icon={faFeather} size="lg" />
           &nbsp;
           Blog
-        </a>
+        </a> */}
         <a className="link" id="gitHub" href="https://github.com/gunnerclark" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="lg" />
           &nbsp;
