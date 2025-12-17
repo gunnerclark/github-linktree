@@ -47,7 +47,7 @@ function App() {
       {/* <div className="userName">@gunnerclark</div> */}
       {/* <div className="description">My name is Guner Clark. I'm a software developer</div> */}
       <div id="links">
-        <a className="link" id="blog" href="https://gunnerclark.blog/" target="_blank">
+        <a className="link" id="blog" href="https://blog.gunnerclark.dev/" target="_blank">
           <FontAwesomeIcon icon={faFeather} size="lg" />
           &nbsp;
           Blog
